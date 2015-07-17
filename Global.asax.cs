@@ -1,4 +1,5 @@
 ﻿using System.Web.Http;
+using System.Web.Routing;
 using WebAPISandbox.App_Start;
 
 namespace WebAPISandbox
@@ -8,6 +9,7 @@ namespace WebAPISandbox
 		protected void Application_Start()
 		{
 			GlobalConfiguration.Configure(WebApiConfig.Register);
+			RouteConfig.RegisterRoutes(RouteTable.Routes);
 		}
 	}
 }
