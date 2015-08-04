@@ -9,7 +9,7 @@
 <div>
     <h4>Customer</h4>
     <hr />
-    @{Html.RenderPartial("Partials/_ViewCustomer");}
+    @Html.Partial("_ViewCustomer")
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |

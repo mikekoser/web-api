@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace WebAPISandbox
@@ -12,6 +8,7 @@ namespace WebAPISandbox
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+			routes.IgnoreRoute("bundle/{*pathInfo}");
 
             routes.MapRoute(
                 name: "Default",
