@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/bundle/css")
-    @Scripts.Render("~/bundle/modernizr")
+
+    <link href="/dist/style.mins.css" rel="stylesheet" />
+    <script src="/dist/web-api-sandbox.-head.min.js"></script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -32,8 +33,6 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundle/jquery")
-    @Scripts.Render("~/bundle/bootstrap")
-    @RenderSection("scripts", required: false)
+    <script src="/dist/web-api-sandbox.min.js"></script>
 </body>
 </html>
